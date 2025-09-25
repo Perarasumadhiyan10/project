@@ -1,0 +1,41 @@
+  h2 {
+    color: #4b0082;
+   
+  }
+   input[type="text"],
+        input[type="date"] {
+            width: 50%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+  form{
+     max-width: 400px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: #7ee8e4;
+            border: 2px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,5);
+            color: #4b0082;
+            justify-content: center;
+            text-align: center;
+          }
+  button{
+    border-color: white;
+    border-radius: 2px;
+    color: #4b0082;
+    background-color: aqua;
+     border: 1px solid #aaa;
+      border-radius: 10px;
+      width: 30%;
+      padding: 10px;
+  
+  }
+  button:hover{
+    background-color: rgb(12, 88, 231);
+  }
+
+ 
