@@ -3,23 +3,17 @@
 
 <?php
 include 'demo.html';
-
-// 1. Database Connection
 $con = mysqli_connect("localhost", "root", "", "webdesign");
 
 if (!$con) {
     die("Connection Error: " . mysqli_connect_error());
 }
-
-// 2. SQL Query to select all customer records
 $sql = "SELECT * FROM customer";
 $res = mysqli_query($con, $sql);
 
 if (!$res) {
     die("Query Failed: " . mysqli_error($con));
 }
-
-// 3. Display Table
 echo "<center><h2>Customer Records</h2>";
 if (mysqli_num_rows($res) > 0) {
     echo "<table border='1'>
@@ -36,8 +30,7 @@ if (mysqli_num_rows($res) > 0) {
     </tr>";
 
     while ($row = mysqli_fetch_assoc($res)) {
-        // Use correct variable name consistently
-        $customer_id = $row['customer id'];
+              $customer_id = $row['customer id'];
 
         echo "<tr>
             <td>" . $customer_id . "</td>

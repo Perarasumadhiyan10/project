@@ -6,27 +6,26 @@ $con = mysqli_connect("localhost", "root", "", "webdesign");
 if (!$con) {
     die("Connection Error: " . mysqli_connect_error());
 }
-
-// 2. Get customer ID from URL
 if (isset($_GET['id'])) {
     $customer_id = $_GET['id'];
-
-    // 3. Fetch customer data
     $sql = "SELECT * FROM customer WHERE `customer id` = '$customer_id'";
     $res = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($res) == 1) {
         $row = mysqli_fetch_assoc($res);
-    } else {
+    } 
+else 
+{
         echo "Customer not found.";
         exit;
     }
-} else {
+} 
+else 
+{
     echo "No customer ID provided.";
     exit;
 }
 
-// 4. Handle form submission
 if (isset($_POST['update'])) {
     $fullname = $_POST['fullname'];
     $email = $_POST['email'];
@@ -48,13 +47,13 @@ if (isset($_POST['update'])) {
 
     if (mysqli_query($con, $update_sql)) {
         echo "<script>alert('Customer updated successfully'); window.location.href='display.php';</script>";
-    } else {
+    } 
+else {
         echo "Update failed: " . mysqli_error($con);
     }
 }
 ?>
 
-<!-- 5. Display Edit Form -->
 <form method="post">
     <h2>Edit Customer</h2>
     Full Name: <input type="text" name="fullname" value="<?php echo $row['full name']; ?>"><br><br>
