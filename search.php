@@ -23,8 +23,8 @@ if (isset($_GET['search'])) {
             <th>Email ID</th>
             <th>Address</th>
             <th>Product Name</th>
-            <th>Deliver Date</th>
-            <th>Payment</th>
+            // <th>Deliver Date</th>
+            // <th>Payment</th>
             <th>Contact Number</th>
         </tr>
         <tr>
@@ -33,8 +33,8 @@ if (isset($_GET['search'])) {
             <td>" . $row['email id'] . "</td>
             <td>" . $row['address'] . "</td>
             <td>" . $row['product name'] . "</td>
-            <td>" . $row['deliver date'] . "</td>
-            <td>" . $row['payment'] . "</td>
+            // <td>" . $row['deliver date'] . "</td>
+            // <td>" . $row['payment'] . "</td>
             <td>" . $row['contact number'] . "</td>
             </tr>
             </table>";

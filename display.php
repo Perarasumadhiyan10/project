@@ -23,8 +23,6 @@ if (mysqli_num_rows($res) > 0) {
         <th>Email ID</th>
         <th>Address</th>
         <th>Product Name</th>
-        <th>Delivery Date</th>
-        <th>Payment</th>
         <th>Contact No</th>
         <th>Action</th>
     </tr>";
@@ -38,8 +36,6 @@ if (mysqli_num_rows($res) > 0) {
             <td>" . $row['email id'] . "</td>
             <td>" . $row['address'] . "</td>
             <td>" . $row['product name'] . "</td>
-            <td>" . $row['deliver date'] . "</td>
-            <td>" . $row['payment'] . "</td>
             <td>" . $row['contact number'] . "</td>
             <td>
                 <a href='update.php?id=" . $customer_id . "'>Edit</a>

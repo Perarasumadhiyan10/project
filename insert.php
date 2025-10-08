@@ -6,8 +6,8 @@ $fname = $_POST['name'];
 $email = $_POST['emailid'];
 $address = $_POST['address'];
 $product = $_POST['product'];
-$date = $_POST['delivery'];
-$payment = $_POST['payment'];
+// $date = $_POST['delivery'];
+// $payment = $_POST['payment'];
 $number = $_POST['cont'];
 $con = mysqli_connect("localhost","root","","webdesign");
 
@@ -17,7 +17,7 @@ if(!$con)
 }
 else
 {
-$sql="INSERT INTO customer VALUES('$customer','$fname','$email','$address','$product','$date','$payment','$number')";
+$sql="INSERT INTO customer VALUES('$customer','$fname','$email','$address','$product,'$number')";
 $res =mysqli_query($con,$sql);
 
 }
