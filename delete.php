@@ -12,7 +12,7 @@ if(isset($_POST['delete']))
 {
     $customer = $_POST['cust'];
 
-$sql = "Delete from customer where `customer id` = '$customer'";
+$sql = "Delete from customer where `customerid` = '$customer'";
 $res =mysqli_query($con,$sql);
 
 
@@ -26,9 +26,6 @@ else
         echo(" No Data Deleted ");
         
 }
-
-
-
 mysqli_close($con);
 ?>
 

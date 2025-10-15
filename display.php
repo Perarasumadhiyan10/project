@@ -23,24 +23,20 @@ if (mysqli_num_rows($res) > 0) {
         <th>Email ID</th>
         <th>Address</th>
         <th>Product Name</th>
-        <th>Delivery Date</th>
-        <th>Payment</th>
         <th>Contact No</th>
         <th>Action</th>
     </tr>";
 
     while ($row = mysqli_fetch_assoc($res)) {
-              $customer_id = $row['customer id'];
+              $customer_id = $row['customerid'];
 
         echo "<tr>
             <td>" . $customer_id . "</td>
-            <td>" . $row['full name'] . "</td>
-            <td>" . $row['email id'] . "</td>
+            <td>" . $row['fullname'] . "</td>
+            <td>" . $row['emailid'] . "</td>
             <td>" . $row['address'] . "</td>
-            <td>" . $row['product name'] . "</td>
-            <td>" . $row['deliver date'] . "</td>
-            <td>" . $row['payment'] . "</td>
-            <td>" . $row['contact number'] . "</td>
+            <td>" . $row['productname'] . "</td>
+            <td>" . $row['contactnumber'] . "</td>
             <td>
                 <a href='update.php?id=" . $customer_id . "'>Edit</a>
             </td>

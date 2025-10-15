@@ -1,8 +1,7 @@
-th{
-    color: rgb(222, 253, 23);
-    background-color: rgb(236, 19, 189);
+th {
+    color: white;
+    background-color: #2ecc71; /* green */
 }
-td{
-    color:  rgb(222, 3, 98);
- 
+td {
+    color: #145a32; /* dark green */
 }

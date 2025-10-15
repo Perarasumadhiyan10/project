@@ -10,7 +10,7 @@ if (isset($_GET['cust'])) {
 }
 
 if (isset($_GET['search'])) {
-    $sql = "SELECT * FROM customer WHERE `customer id`='$cust'";
+    $sql = "SELECT * FROM customer WHERE `customerid`='$cust'";
     $res = mysqli_query($con, $sql);
 
     if ($res && mysqli_num_rows($res) >= 0) {
@@ -23,19 +23,15 @@ if (isset($_GET['search'])) {
             <th>Email ID</th>
             <th>Address</th>
             <th>Product Name</th>
-            <th>Deliver Date</th>
-            <th>Payment</th>
             <th>Contact Number</th>
         </tr>
         <tr>
-            <td>" . $row['customer id'] . "</td>
-            <td>" . $row['full name'] . "</td>
-            <td>" . $row['email id'] . "</td>
+            <td>" . $row['customerid'] . "</td>
+            <td>" . $row['fullname'] . "</td>
+            <td>" . $row['emailid'] . "</td>
             <td>" . $row['address'] . "</td>
-            <td>" . $row['product name'] . "</td>
-            <td>" . $row['deliver date'] . "</td>
-            <td>" . $row['payment'] . "</td>
-            <td>" . $row['contact number'] . "</td>
+            <td>" . $row['productname'] . "</td>
+            <td>" . $row['contactnumber'] . "</td>
             </tr>
             </table>";
          echo "</center>";

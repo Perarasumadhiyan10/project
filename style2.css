@@ -1,41 +1,72 @@
-  h2 {
-    color: #4b0082;
-   
-  }
-   input[type="text"],
-        input[type="date"] {
-            width: 50%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #aaa;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
-  form{
-     max-width: 400px;
-            margin: 60px auto;
-            padding: 30px;
-            background-color: #7ee8e4;
-            border: 2px solid #333;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,5);
-            color: #4b0082;
-            justify-content: center;
-            text-align: center;
-          }
-  button{
-    border-color: white;
-    border-radius: 2px;
-    color: #4b0082;
-    background-color: aqua;
-     border: 1px solid #aaa;
-      border-radius: 10px;
-      width: 30%;
-      padding: 10px;
-  
-  }
-  button:hover{
-    background-color: rgb(12, 88, 231);
-  }
+/* General page style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f9a8d4, #c084fc);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- 
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: left;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #5b21b6;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+    outline: none;
+}
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #7e22ce;
+}
+.alert {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}

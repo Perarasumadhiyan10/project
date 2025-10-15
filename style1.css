@@ -1,50 +1,146 @@
- body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f8ff;
-            margin: 0;
-            padding: 0;
-        }
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .customer {
-            max-width: 400px;
-            margin: 60px auto;
-            padding: 30px;
-            background-color: #7ee8e4;
-            border: 2px solid #333;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,5);
-            color: #4b0082;
-        }
+/* Page background and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e6faff, #ccf5ff);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #4408d2;
-            font-size: 24px;
-        }
-        input[type="text"],
-        input[type="date"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #aaa;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
+/* Form styling */
+form {
+    background-color: #7ee8e4;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    margin-top: 60px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    color: #4b0082;
+}
 
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #0e06b3;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+/* Form heading */
+form h2 {
+    color: #3a00a3;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
 
-        button:hover {
-            background-color: #00bfff;
-        }
+form h4 {
+    margin: 15px 0 8px;
+    color: #2e086a;
+}
+
+/* Input box */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 6px rgba(0, 102, 255, 0.4);
+}
+
+/* Search button */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0e06b3;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 10px 15px rgba(24, 23, 23, 0.3);
+}
+
+button:hover {
+    background-color: #00bfff;
+    transform: scale(1.03);
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: linear-gradient(90deg, #0066ff, #00ccff);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f9ff;
+}
+
+tr:hover {
+    background-color: #d9f1ff;
+    transition: 0.3s;
+}
+
+/* No record found message */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-top: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    form {
+        padding: 25px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
