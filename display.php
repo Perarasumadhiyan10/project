@@ -35,8 +35,13 @@ if (mysqli_num_rows($res) > 0) {
             <td>" . $row['fullname'] . "</td>
             <td>" . $row['emailid'] . "</td>
             <td>" . $row['address'] . "</td>
+<<<<<<< HEAD
             <td>" . $row['productname'] . "</td>
             <td>" . $row['contactnumber'] . "</td>
+=======
+            <td>" . $row['product name'] . "</td>
+            <td>" . $row['contact number'] . "</td>
+>>>>>>> c58ca6aab58226098c1a8d206a284d244b295448
             <td>
                 <a href='update.php?id=" . $customer_id . "'>Edit</a>
             </td>

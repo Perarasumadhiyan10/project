@@ -23,6 +23,11 @@ if (isset($_GET['search'])) {
             <th>Email ID</th>
             <th>Address</th>
             <th>Product Name</th>
+<<<<<<< HEAD
+=======
+            // <th>Deliver Date</th>
+            // <th>Payment</th>
+>>>>>>> c58ca6aab58226098c1a8d206a284d244b295448
             <th>Contact Number</th>
         </tr>
         <tr>
@@ -30,8 +35,15 @@ if (isset($_GET['search'])) {
             <td>" . $row['fullname'] . "</td>
             <td>" . $row['emailid'] . "</td>
             <td>" . $row['address'] . "</td>
+<<<<<<< HEAD
             <td>" . $row['productname'] . "</td>
             <td>" . $row['contactnumber'] . "</td>
+=======
+            <td>" . $row['product name'] . "</td>
+            // <td>" . $row['deliver date'] . "</td>
+            // <td>" . $row['payment'] . "</td>
+            <td>" . $row['contact number'] . "</td>
+>>>>>>> c58ca6aab58226098c1a8d206a284d244b295448
             </tr>
             </table>";
          echo "</center>";
